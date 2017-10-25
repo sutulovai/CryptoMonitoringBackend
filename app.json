@@ -1,0 +1,16 @@
+{
+  "name": "CryptoMonitoringBackend",
+  "description": "App for monitoring crypto currencies",
+  "image": "heroku/python",
+  "repository": "https://github.com/sutulovai/CryptoMonitoringBackend",
+  "keywords": ["python", "django" ],
+  "addons": [ "heroku-postgresql" ],
+  "environments": {
+    "test": {
+      "scripts": {
+        "test-setup": "python manage.py collectstatic --noinput",
+        "test": "python manage.py test"
+      }
+    }
+  }
+}
