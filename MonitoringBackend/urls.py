@@ -9,7 +9,7 @@ urlpatterns = [
         name='get or delete or update applications user'
     ),
     url(
-        r'^api/v1/events/$',
+        r'^api/v1/app_users/$',
         views.get_all_or_add_one_app_users,
         name='get all applications users or insert one'
     ),

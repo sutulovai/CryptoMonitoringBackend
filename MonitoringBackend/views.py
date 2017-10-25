@@ -33,7 +33,7 @@ def get_all_or_add_one_app_users(request):
     elif request.method == 'POST':
         data = {
             'login': request.data.get('login'),
-            'password': int(request.data.get('password')),
+            'password': request.data.get('password'),
         }
         serializer = ApplicationUserSerializer(data=data)
         if serializer.is_valid():
