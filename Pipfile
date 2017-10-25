@@ -10,6 +10,7 @@ name = "pypi"
 requests = "*"
 django = "*"
 djangorestframework = "*"
+dj-database-url = "*"
 
 
 [dev-packages]
